@@ -7,6 +7,11 @@ Django数据库连接超过wait_timeout导致连接丢失时自动重新连接�
 ```sh
 pip install django_db_reconnect
 ```
+> 注意仅支持`pymysql`，使django使用`pymysql`需要先安装包并在settings.py所在目录的__init__.py增加如下代码：
+> ```
+> import pymysql
+> pymysql.install_as_MySQLdb()
+> ```
 
 # 使用
 
